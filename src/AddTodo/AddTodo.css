@@ -1,0 +1,24 @@
+.AppTodo__form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.AppTodo__text {
+    border: 1px solid #15161f;
+    padding: 1rem 2rem;
+    border-radius: 0.8rem;
+    width: 80%;
+    height: 4rem;
+}
+
+.AppTodo__text::placeholder {
+    opacity: 0.6;
+}
+
+.AppTodo__button {
+    border: 1px solid #15161f;
+    padding: 1rem 2rem;
+    border-radius: 0.8rem;
+    height: 4rem;
+}

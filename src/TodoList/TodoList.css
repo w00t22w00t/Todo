@@ -1,0 +1,46 @@
+.TodoList {
+    margin-top: 2rem;
+}
+
+.TodoList__item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.TodoList__item:not(:first-of-type) {
+    margin-top: 1rem;
+}
+
+.TodoList__text {
+    margin-left: 1rem;
+    font-size: 1.8rem;
+}
+
+.TodoList__text_completed {
+    text-decoration: line-through;
+}
+
+.TodoList__bttn {
+    margin-left: auto;
+    padding: 1rem;
+}
+
+.TodoList__bttn::after,
+.TodoList__bttn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2rem;
+    height: 0.2rem;
+    background: #000000;
+}
+
+.TodoList__bttn::after {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.TodoList__bttn::before {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
